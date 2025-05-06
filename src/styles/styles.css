@@ -52,6 +52,9 @@ body {
     border: solid 1px var(--color-primary);
     text-align: center;
 }
+section{
+    margin: 20px 0;
+}
 
 
 

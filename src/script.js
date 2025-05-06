@@ -26,3 +26,17 @@ menuToggle.addEventListener('click', () => {
 
     document.body.style.overflow = isExpanded ? 'auto' : 'hidden';
 });
+
+
+
+// SERVICES CARDS
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('active-card'));
+    card.classList.add('active-card');
+    const cardArrow = card.querySelector('.card-link img');
+    cardArrow.src = 'assets/shared/Arrow-selected.svg';    
+  });
+});
