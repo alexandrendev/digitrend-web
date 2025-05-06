@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/services.css">
+    
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,8 +23,16 @@
 
     <header>
         
-        <img id="mobile-shape" class="shape" src="assets/hero/shape-mobile.svg"">
-        <img id="desktop-shape" class="shape" src="assets/hero/shape.svg">
+        <svg viewBox="0 0 1440 749" preserveAspectRatio="xMidYMin slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 511.629V-8H1440V618.445L262.069 746.711C196.022 753.903 129.996 732.979 80.1463 689.059C29.194 644.167 0 579.537 0 511.629Z" fill="url(#paint0_linear_1_13)"/>
+            <defs>
+                <linearGradient id="paint0_linear_1_13" x1="1440" y1="615.861" x2="-267.979" y2="-187.731" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#073340"/>
+                    <stop offset="1" stop-color="#659365"/>
+                </linearGradient>
+            </defs>
+        </svg>
+
 
         <nav class="navbar">
             <button id="menu" class="menu-toggle" aria-label="Abrir menu">
@@ -62,7 +80,7 @@
 
 
 
-    <div class="content">
+    <!-- <div class="content"> -->
         <section id="home">
             <h1 class="section-title">OUR CLIENTS</h1>
             <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
@@ -83,9 +101,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>                
             </div>
 
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zpHOIlQbj8Y" frameborder="0" allowfullscreen></iframe>
+            <iframe class="video" src="https://www.youtube.com/embed/zpHOIlQbj8Y?controls=0&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
 
-            <a href="#">Contact Us</a>
+            <a class="btn-primary" href="#">Contact Us</a>
             
     
             </div>
@@ -98,7 +116,37 @@
             <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
     
             <div class="card-container">
-    
+                <div class="card">
+                    <img src="assets/services/SEO.svg" alt="SEO Consultancy">
+                    <h1 class="card-title">SEO Consultancy</h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+
+                    <a href="" class="card-link"></a>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="" alt="">
+                    <h1 class="card-title"></h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+
+                    <div class="card-link">
+                        <a href="#">Explore</a>
+                        <img src="assets/shared/Arrow.svg" alt="redirect-icon">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="" alt="">
+                    <h1 class="card-title"></h1>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+
+                    <a href="" class="card-link"></a>
+                </div>
             </div>
         </section>
     
@@ -126,7 +174,7 @@
     
             </div>
         </section>
-    </div>
+    <!-- </div> -->
 
 
     <footer class="footer">
