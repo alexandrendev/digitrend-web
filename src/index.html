@@ -13,10 +13,11 @@
 
     <header>
         
-        <img class="shape" src="assets/hero/shape.svg"">
+        <img id="mobile-shape" class="shape" src="assets/hero/shape-mobile.svg"">
+        <img id="desktop-shape" class="shape" src="assets/hero/shape.svg">
 
         <nav class="navbar">
-            <button class="menu-toggle" aria-label="Abrir menu">
+            <button id="menu" class="menu-toggle" aria-label="Abrir menu">
                 <img src="assets/menu-line.svg" alt="menu">
             </button>
 
@@ -31,10 +32,19 @@
                 <a href="#pricing">Pricing</a>
                 <a href="#portfolio">Portfolio</a>
             </div>
-    
-            <div class="contact-us">
-                <a class="btn-primary" href="#">Contact Us</a>
+
+            <div class="mobile-options">
+                <button class="close-menu" aria-label="Fechar menu">✕</button>
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#portfolio">Portfolio</a>
             </div>
+    
+            
+                <a class="navbar-button" href="#">Contact Us</a>
+            
         </nav>
 
         <div class="hero">
@@ -49,66 +59,80 @@
         
     </header>
 
-    <section id="home">
-        <h1>Our Clients</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
 
-        <div class="logotypes">
 
-        </div>
-    </section>
 
-    <section id="about">
-        <div class="text">
-            <h1>Crafting Digital Brilliance Explore Our Methodology</h1>
+    <div class="content">
+        <section id="home">
+            <h1 class="section-title">OUR CLIENTS</h1>
             <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+    
+            <div class="logotypes">
+                <img src="assets/clients/airbnb.svg">
+                <img src="assets/clients/Github.svg">
+                <img src="assets/clients/Spotify.svg">
+                <img src="assets/clients/Husky.svg">
+            </div>
+        </section>
+
+
+    
+        <section id="about">
+            <div class="text">
+                <h1 class="section-title">Crafting Digital Brilliance Explore Our Methodology</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>                
+            </div>
+
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/zpHOIlQbj8Y" frameborder="0" allowfullscreen></iframe>
 
             <a href="#">Contact Us</a>
-        </div>
-
-        <div class="video">
-
-        </div>
-    </section>
-
-    <section id="services">
-        <h1>Our Services</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
-
-        <div class="card-container">
-
-        </div>
-    </section>
-
-    <section id="pricing">
-        <h1>Choose Our Plan</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
-
-        <div class="pricing-card-container">
-
-        </div>
-    </section>
-
-    <section id="portfolio">
-        <h1>Our Portfolio</h1>
-        <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
-
-        <div class="mosaico">
-
-        </div>
-    </section>
-
-    <section id="contact">
-        <h1>Contact Us</h1>
-        <div class="contact-form">
-
-        </div>
-    </section>
+            
     
+            </div>
+        </section>
+
+
+    
+        <section id="services">
+            <h1 class="section-title">Our Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+    
+            <div class="card-container">
+    
+            </div>
+        </section>
+    
+        <section id="pricing">
+            <h1 class="section-title">Choose Our Plan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+    
+            <div class="pricing-card-container">
+    
+            </div>
+        </section>
+    
+        <section id="portfolio">
+            <h1 class="section-title">Our Portfolio</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Semper a interdum purus velit ullamcorper.</p>
+    
+            <div class="mosaico">
+    
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h1 class="section-title">Contact Us</h1>
+            <div class="contact-form">
+    
+            </div>
+        </section>
+    </div>
+
 
     <footer class="footer">
 
     </footer>
     
+    <script src="script.js"></script>
 </body>
 </html>
