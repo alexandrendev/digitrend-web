@@ -4,6 +4,7 @@
 
     --text-primary: black;
     --text-secondary: white;
+    --text-tertiary: rgba(93, 90, 90, 1);
 }
 
 * {

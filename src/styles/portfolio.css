@@ -1,0 +1,177 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.item {
+    position: relative;
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-large, .item-medium {
+    display: none;
+}
+
+.portfolio-section h2{
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.portfolio-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: var(--text-tertiary);
+    width: 90%;
+    margin: 40px auto;
+}
+
+.grid-container {
+    position: relative;
+}
+
+.overflow-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 86%;
+    height: 265px;
+    margin: 0 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.overflow-grid h1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.overflow-grid .image {
+    align-self: flex-end;
+}
+
+.overflow-grid .image img {
+    width: 20px;
+}
+
+.grid-container > .item:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(5, minmax(200px, 1fr));
+        gap: 0;
+    }
+    
+    .item {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+    }
+
+    .item {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .desktop-wide {
+        grid-column:1 / span 2;
+        grid-row: 3 / span 1;
+
+    }
+
+    .desktop-large {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    #first-large {
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 2;
+    }
+    
+    .desktop-tall {
+        grid-row: span 2;
+    }
+
+
+    .portfolio-description {
+        font-family: 'Inter', sans-serif;
+        font-size: 1.2rem;
+        text-align: center;
+        width: 20%;
+        margin: 40px auto;
+    }
+
+    .overflow-grid{
+        position: absolute;
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 2;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        width: calc(100%);
+        height: calc(100%);
+        box-sizing: border-box;
+        margin: 0;
+    }
+    .overflow-grid h1 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .overflow-grid .image {
+        align-self: flex-end;
+    }
+    
+    .overflow-grid .image img {
+        width: 24px;
+    }
+
+    .overflow-grid p{
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+}
