@@ -21,3 +21,11 @@
     gap: 60px;
     margin-top: 50px;
 }
+
+@media (min-width: 768px) {
+    .logotypes{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

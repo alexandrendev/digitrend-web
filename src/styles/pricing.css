@@ -1,19 +1,22 @@
-#pricing{
+#pricing {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
+    padding: 10% 0px;
     text-align: center;
     gap: 20px;
+    background-color: var(--background-secondary);
 }
 
 .pricing-card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .pricing-card, .pricing-card-premium {
@@ -26,42 +29,27 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
-    width: 80vw;
-    height: 70vh;
-
+    width: 100%;
+    height: 628px;
 }
 
-.pricing-card h1, .pricing-card-premium h1{
+.pricing-card h1, .pricing-card-premium h1 {
     font-family: 'Inter';
     font-weight: 400;
-    font-family: Inter;
     line-height: 100%;
     letter-spacing: 0%;
 }
 
-.pricing-card-premium{
+.pricing-card-premium {
     color: white;
+    background: linear-gradient(to bottom left, #073340 0%, #659365 100%);
 }
 
-.pricing-card{
-    border: 4px solid rgba(101, 147, 101, 1);
-}
-
-.pricing-card-premium{
-    background: linear-gradient(to bottom left,
-        /* 135deg, */
-        #073340 0%, 
-        #659365 100%
-    );
-      
-}
-
-
-.pricing-card{
+.pricing-card {
     background-color: whitesmoke;
 }
 
-.pricing-card-container p span{
+.pricing-card-container p span {
     font-family: 'Inter';
     font-weight: 500;
     font-size: 1.5rem;
@@ -69,7 +57,7 @@
     letter-spacing: 0%;
 }
 
-ul{
+ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,11 +70,41 @@ li {
     list-style: none;
     position: relative;
     padding-left: 1.5em;
-  }
-  
-  li::before {
+}
+
+li::before {
     content: "✔";
     position: absolute;
     left: 0;
 }
-  
+
+.pricing-card-container > :first-child {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1)
+}
+
+.pricing-card-container > :last-child {
+    box-shadow: 0 4px 12px rgba(101, 147, 101, 1);
+}
+
+@media (min-width: 768px) {
+    .pricing-card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        align-items: center;
+    }
+    .pricing-card-premium {
+        height: 670px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pricing-card-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0px;
+        align-items: center;
+    }
+
+    .pricing-card-premium {
+        height: 670px;
+    }
+}
