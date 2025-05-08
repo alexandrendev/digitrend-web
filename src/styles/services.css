@@ -92,3 +92,18 @@
     text-decoration: underline;
 }
 
+@media (min-width: 768px) {
+    .card-container{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        padding: 0 15% 50px 15%;
+    }
+    .card{
+        width: 350px;
+        height: 537px;
+        padding: 20px 40px;
+    }
+}
+
