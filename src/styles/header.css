@@ -3,11 +3,26 @@ svg{
     height: 90%;
 }
 
+.shape{
+    position: absolute;
+    width: 150%;
+    height: 110%;
+    z-index: -1;
+    background: linear-gradient(to bottom left,
+    #073340 0%, 
+    #659365 100%
+    );
+    left: -20%;
+    top: -25%;
+    border-bottom-left-radius: 50px;
+    transform: rotate(-8deg);
+}
+
 header{
     position: relative;
     width: 100%;
     height: 90%;
-    padding: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -35,19 +50,22 @@ header{
 }
 
 .navbar-button{
-    background-color: var(--color-primary);
-    padding: 7px 7px;
-    border-radius: 5px;
-    font-size: 10px;
-    font-weight: 600;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
     justify-content: center;
-    max-height: 50px;
-    height: auto;
-    width: auto;
+    align-items: center;
+    padding: 18px 25px;
+    gap: 10px;
+
+    padding: 9px 8px;
+
+    background: #B9F2A1;
+    font-size: 8px;
+    height: 28px;
+    width: 61px;
+    border-radius: 7px;
+
 }
+
+
 
 .hero{
     margin-top: 10px;
@@ -78,11 +96,14 @@ header{
     color: var(--text-secondary);
     text-align: center;
 }
+.hero a{
+    margin-bottom: 5%;
+}
 
 
 .hero img{
-    width: 80%;
-    margin-bottom: 70px;
+    height: 30%;
+    margin-bottom: 60px;
 }
 
 .menu-toggle {
@@ -146,5 +167,111 @@ header{
 
 /* Desktop */
 @media (min-width: 1024px) {
+
+    .shape{
+        position: absolute;
+        width: 150%;
+        height: 110%;
+        z-index: -1;
+        background: linear-gradient(to bottom right,
+        #659365 0%,
+        #073340 100%
+        );
+        left: -3%;
+        top: -25%;
+        border-bottom-left-radius: 200px;
+        transform: rotate(-6deg);
+    }
+
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 60px;
+        padding: 0 5%;
+    }
+    .navbar .name {
+        position: static;
+        left: auto;
+        transform: none;
+    }
+    
+    .options {
+        margin: 0 auto;
+        display: flex;
+        gap: 30px;
+        a{
+            color: var(--text-secondary);
+            font-size: 22px;
+        }
+    }
+    .options a:hover{
+        color: var(--color-primary);
+    }
+
+    .navbar-button {
+        position: static;
+        margin-left: 0;
+        width: 161px;
+        height: 60px;
+        left: 979px;
+        top: 0px;
+        border-radius: 18px;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 18px 25px;
+    }
+    
+    
+    .hero{
+        display: grid;
+        height: 80%;
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 20px;
+        column-gap: 20%;
+        padding: 0 10%;
+        padding-top: 0;
+
+        justify-items: start;
+        align-items: start;
+    }
+    .hero h1{
+        font-size: 54px;
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+        margin: 0px;
+        justify-self: start;
+    }
+
+    .hero p{
+        grid-column: 1 / span 2;
+        grid-row: 2 / span 2;
+        margin: 0px;
+        justify-self: start;
+    }
+
+    .hero .btn-primary{
+        grid-column: 1 / span 1;
+        grid-row: 3 / span 1;
+    }
+    .hero .btn-secondary{
+        grid-column: 2 / span 1;
+        grid-row: 3 / span 1;
+    }
+
+    .hero img{
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 3;
+        height: 100%;
+    }
+
 
 }

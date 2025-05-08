@@ -23,20 +23,19 @@ body {
 }
 
 .btn-primary, .btn-secondary {
-    width: auto;
-    min-width: 120px;
-    padding: 12px 24px;
+    width: 187px;
+    height: 60px;
+    padding: 18px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .btn-primary{
     background-color: var(--color-primary);
     color: var(--text-primary);
     border: none;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 600;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .btn-primary:hover{
@@ -47,11 +46,13 @@ body {
 .btn-secondary{
     color: var(--text-secondary);
     border: none;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 600;
     border: solid 1px var(--color-primary);
     text-align: center;
+}
+
+.btn-secondary:hover{
+    color: var(--text-primary);
+    background-color: var(--hover-primary);
 }
 section{
     margin: 20px 0;
