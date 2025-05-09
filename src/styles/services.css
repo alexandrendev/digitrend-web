@@ -22,12 +22,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
     padding: 10px 20px;
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
     padding: 20px;
+    width: 295px;
+    height: 537px;
 }
 
 .active-card {
@@ -93,14 +95,31 @@
 }
 
 @media (min-width: 768px) {
-    .card-container{
+    .card-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 20px;
+    }
+
+    .card {
+        width: 295px;
+        height: 537px;
+        padding: 20px;
+        border-radius: 10px;
+        border-width: 3px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         gap: 20px;
-        padding: 0 15% 50px 15%;
+        padding: 25px 10px;
     }
-    .card{
+
+    .card {
         width: 350px;
         height: 537px;
         padding: 20px 40px;

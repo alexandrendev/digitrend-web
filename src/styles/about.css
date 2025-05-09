@@ -33,3 +33,22 @@
 iframe{
     margin-bottom: 20px;
 }
+
+@media (min-width: 1024px) {
+    #about{
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        grid-template-rows: 3;
+        height: 50vh;
+        padding: 50px 15%;
+        column-gap: 10%;
+        row-gap: 10%;
+        align-content: space-between;
+        text-align: justify;
+    }
+
+    iframe{
+        grid-column: 2;
+        grid-row: 1 / span 3;
+    }
+}

@@ -29,8 +29,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: 628px;
+    margin: auto;
 }
 
 .pricing-card h1, .pricing-card-premium h1 {
@@ -106,5 +107,9 @@ li::before {
 
     .pricing-card-premium {
         height: 670px;
+    }
+
+    .pricing-card, .pricing-card-premium {
+        width: 100%;
     }
 }

@@ -29,7 +29,7 @@
     color: white;
 }
 
-.item-large, .item-medium {
+.item-large, .item-medium, .item:nth-child(n + 6){
     display: none;
 }
 
@@ -138,6 +138,9 @@
         grid-row: span 2;
     }
 
+    .item:nth-child(n + 6){
+        display: block;
+    }
 
     .portfolio-description {
         font-family: 'Inter', sans-serif;

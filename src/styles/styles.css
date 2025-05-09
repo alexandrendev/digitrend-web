@@ -1,6 +1,7 @@
 :root{
     --color-primary: #B9F2A1;
     --hover-primary: #9FD78A;
+    --hover-secondary: rgb(20 65 69);
 
     --text-primary: black;
     --text-secondary: white;
