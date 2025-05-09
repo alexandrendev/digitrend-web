@@ -156,11 +156,19 @@ header{
 
 /* Tablet */
 @media (min-width: 768px) {
-    #mobile-shape{
-        display: none;
-    }
-    #desktop-shape{
-        display: block;
+    .shape{
+        position: absolute;
+        width: 150%;
+        height: 110%;
+        z-index: -1;
+        background: linear-gradient(to bottom right,
+        #659365 0%,
+        #073340 100%
+        );
+        left: -6%;
+        top: -25%;
+        border-bottom-left-radius: 200px;
+        transform: rotate(-6deg);
     }
 }
 

@@ -25,6 +25,13 @@
     gap: 1rem;
 }
 
+.name-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
 input, textarea {
     width: 100%;
     padding: 0.8rem;
@@ -71,13 +78,11 @@ textarea {
     justify-content: space-around;
     align-items: start;
     border-radius: 8px;
-
     padding: 6%;
     background: linear-gradient(to bottom left,
     #073340 0%, 
     #659365 100%
     );
-
     color: var(--text-secondary);
 }
 
@@ -89,12 +94,22 @@ textarea {
 .contact-info div{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 5px;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
 }
 
 @media (max-width: 768px) {
   .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .name-group {
     grid-template-columns: 1fr;
   }
 }
