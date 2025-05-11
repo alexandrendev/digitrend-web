@@ -1,18 +1,19 @@
 
 # D I G I T R E N D
 
-
-Landing page da agência digital de marketing **Digitrend**.
-
 ## 📄 Sobre
 
-Esta é a landing page da **Digitrend**, desenvolvida com foco na apresentação do modelo de negócio, serviços, portfólio e chamada para contato.
+Este projeto se trata da landing page da **Digitrend**, uma agência digital de marketing. A página foi desenvolvida com foco na apresentação do modelo de negócio, serviços, portfólio e meios para contato.
 
 ## 🚀 Tecnologias Utilizadas
 
-- HTML5
-- CSS3 
-- JavaScript
+<div align="start" style="padding: 50px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" height="60" />
+    <img width="12" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" height="60" />
+    <img width="12" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="60" />          
+</div>
 
 ## 📁 Estrutura do Projeto
 
