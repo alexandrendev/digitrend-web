@@ -28,4 +28,9 @@
         justify-content: space-around;
         align-items: center;
     }
+
+    .logotypes img{
+        width: 144px;
+        height: 45px;
+    }
 }

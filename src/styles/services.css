@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     background-color: whitesmoke;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -96,6 +96,7 @@
 
 @media (min-width: 768px) {
     .card-container {
+        flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 20px;
@@ -104,15 +105,14 @@
     .card {
         width: 295px;
         height: 537px;
-        padding: 20px;
-        border-radius: 10px;
-        border-width: 3px;
+        padding: 10px;
+        border-radius: 5px;
+        /* border-width: 3px; */
     }
 }
 
 @media (min-width: 1024px) {
     .card-container {
-        flex-direction: row;
         justify-content: space-around;
         align-items: center;
         gap: 20px;
