@@ -3,7 +3,6 @@ footer{
     color: white;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     height: 50%;
     padding: 5% 8%;
@@ -46,6 +45,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 30px;
+        font-size: 18px;
     }
 
     .social-icon img{
