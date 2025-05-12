@@ -90,7 +90,7 @@
   
 
 /* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     /* .grid-container {
         grid-template-columns: repeat(5, minmax(200px, 1fr));
         gap: 0;

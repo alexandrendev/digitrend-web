@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const mediaQuery1024 = window.matchMedia("(min-width: 1024px)");
-  const mediaQuery768 = window.matchMedia("(min-width: 768px)");
+  const mediaQuery1024 = window.matchMedia("(min-width: 1440px)");
+  const mediaQuery768 = window.matchMedia("(min-width: 1024px)");
 
   let previousTarget = null;
 
