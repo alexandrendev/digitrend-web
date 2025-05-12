@@ -75,6 +75,14 @@ menuToggle.addEventListener('click', () => {
     document.body.style.overflow = isExpanded ? 'auto' : 'hidden';
 });
 
+document.querySelectorAll('.mobile-options a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+});
+
 
 
 // SERVICES CARDS
