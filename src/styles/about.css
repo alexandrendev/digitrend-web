@@ -38,11 +38,14 @@ iframe{
         grid-template-columns: 1fr 1.4fr;
         grid-template-rows: 3;
         height: 50vh;
-        padding: 50px 7%;
+        padding: 50px 10%;
         column-gap: 10%;
         row-gap: 10%;
         align-content: space-between;
         text-align: justify;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
     }
 
     iframe{
@@ -56,4 +59,11 @@ iframe{
     .section-title{
         font-size: 42px;
     }
+}
+
+@media (min-width: 1440px) {
+    #about{
+        padding: 50px 20%;
+    }
+
 }
